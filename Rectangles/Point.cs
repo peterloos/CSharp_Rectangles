@@ -18,6 +18,17 @@ class Point
         this.y = y;
     }
 
+    // properties
+    public double X
+    {
+        get { return this.x; }
+    }
+
+    public double Y
+    {
+        get { return this.y; }
+    }
+
     // overrides
     public override String ToString()
     {
