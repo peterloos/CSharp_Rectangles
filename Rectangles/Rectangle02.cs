@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 namespace Solution_02
 {
     class Rectangle
