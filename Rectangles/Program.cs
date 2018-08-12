@@ -1,11 +1,14 @@
 ﻿using System;
 
+using Solution_01;
+// using Solution_02;
+
 class Program
 {
     public static void Main()
     {
        Test01_Ctors();
-       Test02_Methods();
+       Test02_Properties();
        Test03_Center();
        Test04_Adjust();
        Test05_Move();
@@ -26,26 +29,26 @@ class Program
         Console.WriteLine(rect5);
     }
 
-    public static void Test02_Methods()
+    public static void Test02_Properties()
     {
         Rectangle rect = new Rectangle(3, 4, 9, 10);
         Console.WriteLine(rect);
-        Console.WriteLine("Circumference: " + rect.Circumference());
-        Console.WriteLine("Diagonal:      " + rect.Diagonal());
-        Console.WriteLine("Area:          " + rect.Area());
-        Console.WriteLine("IsSquare:      " + rect.IsSquare());
+        Console.WriteLine("Circumference: " + rect.Circumference);
+        Console.WriteLine("Diagonal:      " + rect.Diagonal);
+        Console.WriteLine("Area:          " + rect.Area);
+        Console.WriteLine("IsSquare:      " + rect.IsSquare);
     }
 
     public static void Test03_Center()
     {
         Rectangle rect1 = new Rectangle(1, 3, 3, 1);
         Console.WriteLine(rect1);
-        Point p1 = rect1.Center();
+        Point p1 = rect1.Center;
         Console.WriteLine("Center: " + p1.ToString());
 
         Rectangle rect2 = new Rectangle(1, 4, 4, 1);
         Console.WriteLine(rect2);
-        Point p2 = rect2.Center();
+        Point p2 = rect2.Center;
         Console.WriteLine("Center: " + p2.ToString());
     }
 
